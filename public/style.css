@@ -1,0 +1,172 @@
+body{
+  margin: 0px;
+  padding: 0px;
+  font-family: "Roboto",sans-serif;
+}
+header{
+  position: fixed;
+  background: #22242A;
+  padding: 20px;
+  width: 100%;
+  height: 30px;
+}
+
+.left_area h3{
+  color: #fff;
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 22px;
+  font-weight: 900;
+}
+.left_area span{
+  color: #1DC4E7;
+}
+.logout_btn{
+  padding: 5px;
+  background: #19B3D3;
+  text-decoration: none;
+  float: right;
+  margin-top: -30px;
+  margin-right: 40px;
+  border-radius: 2px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+  transition-duration: 0.4s;
+  transition-property: background;
+}
+.logout_btn:hover {
+  background-color: #ff0037; /* Green */
+}
+.sidebar{
+  background: #2F323A;
+  margin-top: 70px;
+  padding-top: 30px;
+  position: fixed;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  transition: 0.5s;
+  transition-property: left;
+}
+.sidebar .profile_image{
+  width: 120px;
+  height: 120px;
+  border-radius: 200px;
+  margin-bottom: 10px;
+}
+
+.sidebar h4{
+  color: #ccc;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+.sidebar a{
+  color: #fff;
+  display: block;
+  width: 100%;
+  line-height: 60px;
+  text-decoration: none;
+  padding-left: 40px;
+  margin-bottom: 2px;
+  box-sizing: border-box;
+  transition: 0.5s;
+  transition-property: background;
+  text-align: left;
+
+}
+.sidebar a:hover{
+  background:#19B3D3;
+}
+.sidebar i{
+  padding-right: 10px;
+}
+label #sidebar_btn{
+  z-index: 1;
+  color: #fff;
+  position: fixed;
+  cursor: pointer;
+  left: 300px;
+  font-size: 20px;
+  margin: 5px 0;
+  transition-duration: 0.5s;
+  transition-property: color;
+}
+label #sidebar_btn:hover{
+  color: #19B3D3;
+}
+
+#check:checked ~ .sidebar{
+  left: -190px;
+}
+#check:checked ~ .sidebar a span{
+  display: none;
+}
+#check:checked ~ .sidebar a{
+  font-size: 20px;
+  width: 80px;
+  margin-left: 170px;
+  transition: 0.5s;
+}
+
+.content{
+  margin-left: 250px;
+  background: url(../public/images/background.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 150vh;
+  transition: 0.5s;
+}
+#check:checked ~ .content{
+  margin-left: 60px;
+}
+
+#check{
+  display: none;
+}
+
+.contact{
+  position: fixed;
+  margin-top: 60px;
+  margin-left: 10px;
+  transition: 3s;
+}
+#gmail{
+  color: #fff;
+  font-size: 20px;
+  background: #821616;
+  border-radius: 200px;
+}
+#whatsapp{
+  color: #fff;
+  font-size: 30px;
+  background: green;
+  border-radius: 200px;
+}
+.contact span{
+    color:  #fff;
+}
+.contact span:hover{
+    color:  #19B3D3;
+}
+.contact p{
+  font-size: 20px;
+  font-family: fantasy;
+
+}
+.night{
+  position: fixed;
+  margin-top: 230px;
+  margin-left: 10px;
+  transition:2s;
+  text-decoration: none;
+}
+.night a{
+  text-decoration: none;
+  color: #19B3D3;
+  font-size: 20px;
+  font-family: fantasy;
+}
+.night a:hover{
+  color:#574648;
+}
